@@ -3,21 +3,19 @@ import { AddCategory } from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
 
 export const GifApp = () => {
-  const [categories, setCategories] = useState(["New York"]);
+  const [categories, setCategories] = useState(["ufo"]);
 
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return;
-    console.log(newCategory);
     setCategories([newCategory, ...categories]);
   };
+
   return (
     <>
       <h1>SearchGifApp</h1>
-
       <AddCategory onNewCategory={(value) => onAddCategory(value)} />
-
-      {categories.map((cat) => (
-        <GifGrid key={cat} cat={cat} />
+      {categories.map((category) => (
+        <GifGrid key={category} category={category} />
       ))}
     </>
   );
