@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export const Card = ({ title, url, id }) => {
   return (
@@ -9,4 +9,9 @@ export const Card = ({ title, url, id }) => {
       </div>
     </>
   );
+};
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };

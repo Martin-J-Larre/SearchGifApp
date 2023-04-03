@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in Card compenent should match with snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="String"
+      src="https://string-string/"
+    />
+    <p>
+      String
+    </p>
+  </div>
+</div>
+`;
